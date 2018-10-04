@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>UNICORNS</title>
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+
+</head>
+
+<body>
+    <div class="containerAll">
+        <div class="container">
+            <h1 class="header">Add Your Unicorn!</h1>
+            <div>The Unicorns Name:</div>
+            <p class="error nameError" style="visibility: hidden">You Have'nt Entered The Unicorn's Name!!</p>
+            <input type="text" class="name bar" placeholder="    Name..."><br><br>
+            <div>The Unicorns Magic:</div>
+            <p class="error magicError" style="visibility: hidden">You Have'nt Entered The Unicorn's Magic!!</p>
+            <input type="text" class="magic bar" placeholder="    Magic..."><br><br>
+            <button type="button" class="add btn">ADD</button>
+        </div>
+        <div class="unicornsAll">
+            <h2>UNICORNS!</h2>
+            <div class="unicorns"></div>
+        </div>
+    </div>
+    <script id="unicorns-template" type="text/x-handlebars-template">
+        {{#each unicorns}}
+        <div class="unicorn">
+            <div class="line" data-id="{{_id}}"><span>{{name}}</span> Has The Power Of  <span>{{magic}}</span></div>
+            <button type="button" class="delete btn">Delete</button>
+        </div>
+        {{/each}}
+    </script>
+
+
+    <script src="jquery/dist/jquery.js"></script>
+    <script src="handlebars/dist/handlebars.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

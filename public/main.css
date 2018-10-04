@@ -1,0 +1,71 @@
+body{
+    background-image: url('http://www.guoguiyan.com/data/out/204/68678868-unicorn-wallpapers.png');
+    height: inherit;
+    width: inherit;
+    text-align: center;
+}
+
+.containerAll{
+    display: grid;
+    grid-template-areas: 
+    'c u'
+}
+
+.container{
+    grid-area: c;
+}
+
+.unicornsAll{
+    grid-area: u;
+}
+
+.error{
+    color: darkred;
+}
+
+h1{
+    color: white;
+    font-family: fantasy;
+    font-size: 60px;
+    text-align: center;
+}
+
+h2{
+    color: white;
+    font-family: fantasy;
+    font-size: 40px;
+    text-align: center;
+}
+
+div{
+    font-size: 25px;
+    color: white;
+    font-family: Lobster;
+}
+
+span{
+    font-family: Lobster;
+    color: darkmagenta;
+}
+
+.bar{
+    border-radius: 25px;
+    width: 500px;
+    height: 35px;
+    color: palevioletred;
+    font-size: 25px;
+    font-family: fantasy;
+}
+
+.btn:hover{
+    background-color: rgb(175, 127, 143);
+}
+
+.btn{
+    border-radius: 25px;
+    background-color: palevioletred;
+    height: 40px;
+    width: 100px;
+    font-size: 18px;
+    color: white;
+}
