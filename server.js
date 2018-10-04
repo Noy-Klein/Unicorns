@@ -7,7 +7,7 @@ mongoose.connect('mongodb://localhost/unicornsDB', function () {
     console.log("DB connection established!!!");
 })
 
-const Unicorn = require('./public/unicornModel');
+const Unicorn = require('./model/unicornModel');
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
