@@ -1,6 +1,7 @@
 let unicorns = [];
 
 const render = function () {
+    $('.unicorns').empty();
     let source = $('#unicorns-template').html();
     let template = Handlebars.compile(source);
     let newHTML = template({ unicorns: unicorns })
@@ -10,7 +11,6 @@ const render = function () {
 const gettingUniList = function () {
     $.get('/unicorns').then((data) => {
         unicorns = data;
-        $('.unicorns').empty();
     }).then(() => {
         render();
         unicorns = [];
